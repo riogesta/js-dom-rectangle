@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.container {
+			magin: 0px;
+			padding:  10px;
+		}
+
+		.one{
+			float: left;
+		}
+
+		.two{
+			float: right;
+			background: #a9bafc;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		.kotak{
+			width: 300px;
+			height: 300px;
+			border-radius: 0px;
+			background-color: salmon;
+			-webkit-transition: 0.3s ease;
+  			transition: 0.3s ease;
+			
+		}
+		.kotak:hover{
+			box-shadow: 0px 0px 10px;
+			cursor: pointer;
+			-webkit-transform: scale(0.5);
+  			transform: scale(1.01);
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="kotak one"></div>
+	
+		<div class="two set-box">
+			<label for="">radius atas kiri</label>
+			<input type="range" name="radius-t-l" max="200" min="0" value='0'><span id='#tl'>0</span>
+			<br>
+			<label for="">radius atas kanan</label>
+			<input type="range" name="radius-t-r" max="200" min="0" value='0'><span id='#tr'>0</span>
+			<br>
+			<label for="">radius bawah kiri</label>
+			<input type="range" name="radius-b-l" max="200" min="0" value='0'><span id='#bl'>0</span>
+			<br>
+			<label for="">radius bawah kanan</label>
+			<input type="range" name="radius-b-r" max="200" min="0" value='0'><span id='#br'>0</span>
+			<br> <br>
+			<label for="">tinggi</label>
+			<input type="range" name="tinggi" max="600" min="50" value="300">
+			<label for="">lebar</label>
+			<input type="range" name="lebar" max="900" min="50" value="300">	
+			
+			<br> <br>
+
+			<label for="">pilih warna</label>
+			<input type="color" name="colorP" value="#fa8072">
+
+		</div>
+		<div class="two">
+			
+		</div>
+		
+	
+	</div>
+	
+	
+	<script src="myscript.js"></script>
+</body>
+</html>
