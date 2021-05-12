@@ -6,9 +6,10 @@
 	<title>Document</title>
 
 	<style>
-		.container {
+		body {
 			magin: 0px;
 			padding:  10px;
+			font-family: 'Ubuntu','segoe UI','Arial','Noto Sans';
 		}
 
 		.one{
@@ -26,9 +27,9 @@
 			width: 300px;
 			height: 300px;
 			border-radius: 0px;
-			background-color: salmon;
-			-webkit-transition: 0.3s ease;
-  			transition: 0.3s ease;
+			background-color: #4B6FC3;
+			-webkit-transition: 0.2s ease;
+  			transition: 0.2s ease;
 			
 		}
 		.kotak:hover{
@@ -46,31 +47,77 @@
 		<div class="kotak one"></div>
 	
 		<div class="two set-box">
-			<label for="">radius atas kiri</label>
-			<input type="range" name="radius-t-l" max="200" min="0" value='0'><span id='#tl'>0</span>
+			<table center>
+				<tr>
+					<td>
+						<label for="">radius atas kiri</label>
+					</td>
+					<td>
+						<input type="range" name="radius-t-l" max="200" min="0" value='0'>
+					</td>
+					<td>
+						<span id='#tl'>0</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">radius atas kanan</label>
+					</td>
+					<td>
+						<input type="range" name="radius-t-r" max="200" min="0" value='0'>
+					</td>
+					<td>
+						<span id='#tr'>0</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">radius bawah kiri</label>
+					</td>
+					<td>
+						<input type="range" name="radius-b-l" max="200" min="0" value='0'>
+					</td>
+					<td>
+						<span id='#bl'>0</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">radius bawah kanan</label>
+					</td>
+					<td>
+						<input type="range" name="radius-b-r" max="200" min="0" value='0'>
+					</td>
+					<td>
+						<span id='#br'>0</span>
+					</td>
+				</tr>
+			</table>
 			<br>
-			<label for="">radius atas kanan</label>
-			<input type="range" name="radius-t-r" max="200" min="0" value='0'><span id='#tr'>0</span>
-			<br>
-			<label for="">radius bawah kiri</label>
-			<input type="range" name="radius-b-l" max="200" min="0" value='0'><span id='#bl'>0</span>
-			<br>
-			<label for="">radius bawah kanan</label>
-			<input type="range" name="radius-b-r" max="200" min="0" value='0'><span id='#br'>0</span>
-			<br> <br>
-			<label for="">tinggi</label>
-			<input type="range" name="tinggi" max="600" min="50" value="300">
-			<label for="">lebar</label>
-			<input type="range" name="lebar" max="900" min="50" value="300">	
+			<table>
+				<tr>
+					<td>
+						<label for="">tinggi</label>
+					</td>
+					<td>
+						<input type="range" name="tinggi" max="630" min="50" value="300">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">lebar</label>
+					</td>
+					<td>
+						<input type="range" name="lebar" max="900" min="50" value="300">	
+					</td>
+				</tr>
+			</table>
 			
-			<br> <br>
+			<br>
 
 			<label for="">pilih warna</label>
-			<input type="color" name="colorP" value="#fa8072">
+			<input type="color" name="colorP" value="#4B6FC3">
 
-		</div>
-		<div class="two">
-			
 		</div>
 		
 	
